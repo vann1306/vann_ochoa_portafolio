@@ -1,19 +1,32 @@
 /* Add styles here */
 .contenedor {
-    position: relative; /* Necesario para posicionar el texto */
-    width: 300px; 
-    height: 150px;
+    position: relative; 
+    width: 95%; 
+    height: 600px ;
     background-color: #000000; /* Color del rectángulo */
     border: 2px solid black;
     display: flex;
     justify-content: left;
     align-items: normal;
     text-align: start;   
+    margin: auto;
+    
 }
-
+.cont2 {
+    position: relative; /* Necesario para posicionar el texto */
+    width: 95%; 
+    height: 700px;
+    background-color:#9F0000; /* Color del rectángulo */
+    border: 2px solid #9F0000;
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    text-align: start;  
+    margin: auto; 
+}
 .texto {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16;
+    font-weight: normal;
     color: white;
     font-family: "Be Vietnam Pro", serif;
     font-style: normal
@@ -21,30 +34,27 @@
 }
 
 .titulo{
-    font-family: "Lexend Exa", serif;
-    font-weight: 900;
-    font-style: normal;
+    font-family: "Lexend Exa", serif;   
+    font-style: bold;
     color:#9F0000;
-    font-size: 72px;
+    font-size: 64px;
 }
 
 .subtitulo{
-    font-family: "Be Vietnam Pro", serif;
-    font-weight: 600;
-    font-style: normal;
+    font-family: "Be Vietnam Pro";
+    font-style: bold;
     font-size: 36px;
 }
 
 .subtt2{
     font-family: "Be Vietnam Pro", serif;
-    font-weight: 600;
     font-style: normal;
     font-size: 36px;
     color:#FFFFFF;
 }
 .txt2{
     font-family: "Be Vietnam Pro", serif;
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal
     font-size: 24px; 
 }
