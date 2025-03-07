@@ -1,1 +1,50 @@
 /* Add styles here */
+.contenedor {
+    position: relative; /* Necesario para posicionar el texto */
+    width: 300px; 
+    height: 150px;
+    background-color: #000000; /* Color del rectángulo */
+    border: 2px solid black;
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    text-align: start;   
+}
+
+.texto {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: "Be Vietnam Pro", serif;
+    font-style: normal
+
+}
+
+.titulo{
+    font-family: "Lexend Exa", serif;
+    font-weight: 900;
+    font-style: normal;
+    color:#9F0000;
+    font-size: 72px;
+}
+
+.subtitulo{
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.subtt2{
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    color:#FFFFFF;
+}
+.txt2{
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 300;
+    font-style: normal
+    font-size: 24px; 
+}
