@@ -3,7 +3,7 @@
     position: relative; 
     width: 95%; 
     height: 600px ;
-    background-color: #000000; /* Color del rectángulo */
+    background-color: #000000; 
     border: 2px solid black;
     display: flex;
     justify-content: left;
@@ -13,10 +13,10 @@
     
 }
 .cont2 {
-    position: relative; /* Necesario para posicionar el texto */
+    position: relative; 
     width: 95%; 
     height: 700px;
-    background-color:#9F0000; /* Color del rectángulo */
+    background-color:#9F0000; 
     border: 2px solid #9F0000;
     display: flex;
     justify-content: left;
@@ -55,6 +55,112 @@
 .txt2{
     font-family: "Be Vietnam Pro", serif;
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
     font-size: 24px; 
 }
+
+
+:root{
+    --fondo: #9F0000;
+    --desv: rgb(255, 255, 255);
+    --borde: #9F0000;
+    --ancTab: 75px;
+ }
+ 
+ /*Contiene todo el sistema de tabs*/
+ 
+ .tabsNav{
+ 
+    position:relative;
+    font-family: "Be Vietnam Pro";
+    font-size: 20px;
+    line-height:150%;
+    color: white;
+    width: 95%; 
+    height: 600px; 
+    display: flex;
+ }
+ 
+ /*Las pestañas: cabecera inputs y labels*/ 
+ 
+ .tabsNav .tab{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+ 
+ }
+ 
+ .tabsNav .tab input{
+    display:none;
+ }
+ 
+ .tabsNav .tab label{
+    display:inline-block;
+    position:relative;
+    top:1%;
+    z-index:1000;
+    width: var(--ancTab);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid var(--desv);
+
+    border-bottom: none;
+ 
+    cursor: pointer
+ 
+ }
+ 
+ /*Etiquetas de pestañas individuales*/
+ 
+ .tabsNav .tab:nth-of-type(1) label{
+    left: 0;
+ }
+ 
+ .tabsNav .tab:nth-of-type(2) label{
+    left: var(--ancTab);
+ }
+ 
+ .tabsNav .tab:nth-of-type(3) label{
+    left: calc(2 * var(--ancTab));
+ }
+ 
+ /*Las pestañas contenido dentro de los tabs*/
+ 
+ .tabsNav .tab div{
+    position: relative;
+    box-sizing:border-box;
+    display:none;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color: white;
+    background: #9F0000;
+    border: 1px solid var(--borde);
+    padding: 50px;
+    text-align:justify;
+    box-shadow:3px 3px 10px 1px #0b0b0bd4;
+ 
+ }
+ 
+ /*Etiquetas pulsadas*/
+ 
+ .tabsNav .tab input:checked + label
+ 
+ {
+ 
+    color: black;
+    border: 1px solid var(--borde);
+    background: var(--fondo);
+    border-bottom: 1px solid var(--fondo);
+ 
+ }
+ 
+ /*tab visibles*/
+ 
+ .tabsNav .tab input:checked ~ div{
+    display:block;
+ 
+ }
