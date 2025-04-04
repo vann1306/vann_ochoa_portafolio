@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VannOchoaPortafolio</title>
   <link href='/style.css' rel='stylesheet'>
-
+  <script src="/main.js"></script>
 
   <!-- fuente Vietnam Pro-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +17,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
-
-
 </head>
+
 <body>
-  <!-- seccion 1: presentacion --> 
+<!-- seccion 1: presentacion --> 
    
   <h1 class="tit">
       Hola, soy Vann
@@ -43,6 +42,66 @@
 </div>
 
 
+<!-- Sección 2: Pestañas con carrusel -->
+<h2 class="subt">Sobre mi trabajo</h2>
+
+<div class="contenedor-pestanas">
+  <!-- Botones de pestañas -->
+  <div class="pestanas">
+    <button class="pestana-btn activo" data-carrusel="carrusel1">Proyectos</button>
+    <button class="pestana-btn" data-carrusel="carrusel2"> Herramientas</button>
+
+  </div>
+
+  <!-- Contenedores de carruseles -->
+  <div class="carrusel-contenedor">
+    <!-- Carrusel 1 -->
+    <div id="carrusel1" class="carrusel activo">
+      <div class="carrusel-interno">
+        <img  src="src/img/Perfil1.jpg" alt="Proyecto Juguete" data-titulo="Juguete para niños entre 12 meses y 3 años" data-descripcion="Juguete didáctico de ensamble, la forma asemeja un pastel, se trabajaron las piezas en router junto con los diseñadores Carolina Gutierras y Arturo Diaz"
+>
+        <img src="src/img/Perfil1.jpg" alt="Modelado de Botella">
+        <img src="src/img/Perfil2.jpg" alt="Chamarra para ciclistas">
+      
+      </div>
+      <button class="carrusel-btn anterior">&#10094;</button>
+      <button class="carrusel-btn siguiente">&#10095;</button>
+    </div>
+
+    <!-- Carrusel 2 -->
+    <div id="carrusel2" class="carrusel">
+      <div class="carrusel-interno">
+        <img 
+        src="src/img/IMG_3225.jpg" 
+        alt="Conocimiento de Autocad"
+         data-titulo="Autocad"
+        data-descripcion="Conocimiento del software para trabajo de mapas y modelados"
+>
+        <img src="src/img/IMG_3225.jpg" alt="Proyecto audiovisual: Cobalto 60">
+        
+      </div>
+      <button class="carrusel-btn anterior">&#10094;</button>
+      <button class="carrusel-btn siguiente">&#10095;</button>
+    </div>
+
+    
+  
+  </div>
+</div>
+
+
+
+<div id="lightbox" class="lightbox">
+  <span class="cerrar-lightbox">&times;</span>
+  <div class="contenido-lightbox">
+    <img id="imagen-ampliada" class="imagen-lightbox">
+    <div class="descripcion-lightbox">
+      <h3 id="titulo-proyecto"></h3>
+      <p id="texto-descripcion"></p>
+    </div>
+  </div>
+</div>
+<script src="/main.js"></script> 
 </body>
 </html>
 
